@@ -1,0 +1,4 @@
+name = Drupalika Block Development Module
+description = This is a short description about module
+core = 7.x
+package = Drupalika

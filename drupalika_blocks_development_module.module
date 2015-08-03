@@ -1,0 +1,24 @@
+<?php
+
+function drupalika_blocks_development_module_block_info() {
+  
+  $blocks['hello'] = array(
+    'info' => t('Hello'),
+  );
+  
+  return $blocks;
+}
+
+function drupalika_blocks_development_module_block_view($delta = '') {
+  
+  $block = array();
+
+  switch ($delta) {
+    case 'hello':
+      $block['subject'] = t('Hello');
+      $block['content'] = 'Hello! This is my new block.';
+      break;
+
+  }
+  return $block;
+}
